@@ -1,29 +1,32 @@
+/*element.style {
+  height: fit-content;
+  width: fit-content;
+  display: inline;
+  float: right: initial;
+}*/
 .container {
-
+  background-color: white;
+  height: 15px;
 }
-.column1 {
+.img{
   float: left;
-  width: 75%;
-  padding: 20px;
-  height: 300px;
+  margin-right: 10px;
 }
-.row1:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.contents{
-
+.col-4{
+  margin-top: 10px;
 }
 a:link {
   color: red;
 }
 #profile-pic{
+  margin-right: 10px;
   position: static;
-  border: 3px solid #000000;
   height: 60%;
   width: 50%;
   float: left;
+}
+.row {
+  display: flex;
 }
 .yonder-pic{
   position: static;

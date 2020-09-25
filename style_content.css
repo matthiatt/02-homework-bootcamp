@@ -1,0 +1,11 @@
+#logo{
+    background-color: turquoise;
+    float: left;
+}
+#contact{
+    color: turquoise;
+    background-color: white;
+}
+.form-group {
+    border-style: double;
+}
