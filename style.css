@@ -1,0 +1,48 @@
+.container {
+
+}
+.column1 {
+  float: left;
+  width: 75%;
+  padding: 20px;
+  height: 300px;
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contents{
+
+}
+a:link {
+  color: red;
+}
+#profile-pic{
+  position: static;
+  border: 3px solid #000000;
+  height: 60%;
+  width: 50%;
+  float: left;
+}
+.yonder-pic{
+  position: static;
+  border: 3px solid #000000;
+  height: 60%;
+  width: 50%;
+}
+.yorkie-pic{
+  position: static;
+  border: 3px solid #000000;
+  height: 60%;
+  width: 50%;
+}
+.footpage{
+
+}
+.footstyle{
+
+}
+.foot-text{
+
+}
