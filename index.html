@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <title>Matthew Hiatt's Portfolio</title>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <title>Matthew Hiatt's Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h4>Matthew Hiatt</h4>
+      </div>
+      <ul class="navLinks">
+        <li>
+          <a target="_blank" href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a target="_blank" href="portfolio.html">Portfolio Work</a>
+        </li>
+        <li>
+          <a target="_blank" href="index.html">About Me</a>
+        </li>
+      </ul>
+      <div class="menuIcon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="index.html" id="logo">Matthew Hiatt</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -21,70 +64,125 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" target="_blank" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" target="_blank" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" target="_blank" href="index.html">About me</a></li>
         </ul>
       </div>
-  </nav>
-
-  <main class="container">
-    <div class="row">
-      <div class="col-4">
-          <h1>About Me</h1>
-          <hr />
-          <a href="https://www.linkedin.com/in/matt-hiatt-852a71106/" target="_blank"></a>
-          <img class="img"><img src="matt_picture.jpg" alt="My mom and I on a camel" id="profile-pic"></a>
-          <p class="p1"><p>Born and raised in Chicago, Illinois, but eventually moved to the northwest suburbs towrds the end of my middle-school years. There I would live in a small little town by the name of Roselle, which was nested within much larger ones that people have heard of like Schaumburg, Illinois. While growing up, I played baseball my whole life; I played for 18 years. Eventually when I was 14 I got to play in The Little League World Series, also in Cooperstown - The Field of Dreams. While growing up I always had a passion for computers. Admittingly I never got to see how they were programmed and how they worked to the micro-level, but I really enjoyed the hardware components and understanding how those worked to make a system whole.</p>
-      </div>
-      </div>
-          <br>
-          <br>
-  <main class="container">
-    <div class="row">
-      <div class="col-4">
-          <p class="p1">Born and raised in Chicago, Illinois, but eventually moved to the northwest suburbs towrds the end of my middle-school years. There I would live in a small little town by the name of Roselle, which was nested within much larger ones that people have heard of like Schaumburg, Illinois. While growing up, I played baseball my whole life; I played for 18 years. Eventually when I was 14 I got to play in The Little League World Series, also in Cooperstown - The Field of Dreams. While growing up I always had a passion for computers. Admittingly I never got to see how they were programmed and how they worked to the micro-level, but I really enjoyed the hardware components and understanding how those worked to make a system whole.</p>
-    </div>
-      </div>
-          <br>
-
-          <hr />
-          <div class="row">
-            <div class="col-4">
-            <img src="yonder.jpg" alt="My cat - Yonder" class="yonder-pic">
-          <p class="p1">This is one of my cats', his name is Yonder. Yonder is about 3 years old now and found him when he was around 5 to 6 months of age. He is a very shy and timid cat, very loving, and affectionate.  True fact - I never once heard him hiss. All he wants to do is trill, meow, and play. He's really cute when he takes a fuzzy ball and screeches for attention.</p>
+  </nav> -->
+    <main>
+      <section id="mainAboutMePage">
+        <div class="introduction">
+          <div class="introText">
+            <h1 id="aboutMeHeader">About Me</h1>
+            <hr />
+            <div class="column">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/matt-hiatt-852a71106/"
+                ><img
+                  id="mainProfilePic"
+                  alt="mainPic"
+                  src="portfolioImgs\matt_picture.jpg"
+              /></a>
+            </div>
+            <br />
+            <div class="row"></div>
+            <div class="column">
+              <h3 class="aboutME-H3">Background Information:</h3>
+              <br />
+              <p class="aboutMe-P">
+                I was born and raised in Illinois. For the most part I lived in
+                Chicago until my parents got divorced. Once they got divorced, I
+                then moved to the suburbs; specifically by Roselle, Illinois. My
+                mom was a project manager for a company called - Tellabs. They
+                were a communcations company, but they are no longer around
+                today. My father was a labour, he usually went from job to job,
+                whatever was paying the highest for work, he never specialized
+                in a type of skill.
+              </p>
+              <br />
+              <p class="aboutMe-P">
+                Eventually I went to a high school at Lake Park, which was in
+                Roselle and Medinah. I didn't move again, the school is so
+                massive that it had two campuses. The one in Roselle was
+                considered to be west campus, while east campus was in Medinah.
+                While there, I played football for the school. I played on the
+                defensive line until I lost 100 pounds, then I played middle
+                line-backer. I also played baseball, but I didn't play for the
+                school, I played for a travel team after football season.
+              </p>
+              <br />
+              <p class="aboutMe-P">
+                After my time at Lake Park High School, I decided that I wanted
+                to go to college to further my education. I got accepted to a
+                vast amount of colleges, but unfortunatly I could only pick
+                in-state colleges at the time(that's all my mother could offord.
+                - I am very gratful though I got an oppertunity). Out of all the
+                colleges I applied to, I decided to become a Red Bird at
+                Illinois State University. It would be there where I would find
+                myself, my long-time friends, and memories I still hold till
+                this day.
+              </p>
+              <br />
+              <p class="aboutMe-P">
+                At Illinois State I tried a lot of majors to see what I would
+                really enjoy. At first it was Kinesiology(the study of anatomy),
+                but that didn't work for me. I found out that I prefer to have
+                that as a hobby, rather than a career. There were a lot of other
+                majors I tried, but after a year and a half I found a subject
+                that I enjoyed, English Education. I enjoyed English becuase it
+                taught people how to critically think, use context to support
+                claims, attention to detail, and if you can effectivly read,
+                then you can practically teach yourself anything you want. I
+                ended up not wanting to teach though after I completed my
+                clinical hours.
+              </p>
+              <br />
+              <p class="aboutMe-P">
+                In 2017 I graduated with my degree in English Education, the
+                first in my family to graduate from college so my mom was super
+                proud of me. I didn't want to stop my education there though.
+                Not only becuase I didn't want to be a teacher, but becuase I
+                had a love for learning. To me, knowledge is more valuable than
+                anything else in this world. I like to tell people that I value
+                knowledge over money. Money comes and money goes, but once
+                someone has the knowledge to do something, then no one can take
+                that away from you; it's simply priceless.
+              </p>
+              <br />
+              <p class="aboutMe-P">
+                So then my next chapter in my life started, I was going to get
+                my 2ed degree. I already knew what I wanted to study next -
+                Political Science. A lot of people give me weird looks when I
+                tell them this, but there are a lot of reasons why I decided to
+                make this my second major.
+              </p>
+              <br />
+              <ol>
+                <li class="list">
+                  #1: You learn about psychology - how do people react and why?
+                </li>
+                <li class="list">
+                  #2: You learn about sociology - demographics, culture, and
+                  barriers.
+                </li>
+                <li class="list">
+                  #3: You learn about economics - trade and policy.
+                </li>
+                <li class="list">
+                  #4: You learn about philosophy - This one is my favorite. This
+                  teaches you on questioning the basic fundamentals of your
+                  mental state. Makes you think outside the box on how to solve
+                  problems and learn how to problem solve in a unique manner.
+                </li>
+              </ol>
+            </div>
           </div>
-          <br>
-          <br>
-        <div class="row">
-          <div class="col-4">
-            <p class="p1">He did unfortunatly run into a health issue when he was about 2 years of age. For the longest time I thought he was having stomach issues. He kept on throwing up every other day. When I would switch his food though, it would seem like he would get better; it was to no avail though. After months of taking him in, I decided to get an x-ray done. Turns out he had massive stones in his bladder. He was puking becuase he was in so much pain. With this being said, I felt awful about the whole situation and wish I knew sooner so he wouldn't have suffered. With me now knowing this, I got him operated on right away and now he has been doing better than ever!</p>
-          <br>
-          <br>
-            <p class="p1">I found him and his brother - Yorkie, in an abandoned barn while I was going to school at Illinois State University. It was the middle of Febuary, cold and snowy.  I found them curled up with each other in a corrner of a main room. It broke my heart, they were about 6 months of age. So, I picked them up, put them in my car, and gave them a warm and safe home. They are loving and caring cats.</p>
-          <br>
-          <br>
-          <div class="row">
-          <p><img src="yorkie.jpg" alt="My cat - Yorkie" class="yorkie-pic">This is Yorkie!</p>
-          <br>
-          <br>
-          <br>
-        </article>
-      </div>
-    </div>
-  </main>
-  <div class="row">
-
-  <footer class="footpage">
-    <div class="footstyle">
-      <p class="foot-text"></p>
-    </div>
-  </footer>
-</body>
+        </div>
+      </section>
+    </main>
+    <footer id="footerId"></footer>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_content.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="navbar.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -13,33 +14,35 @@
     <title>Matthew Hiatt</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html" id="logo">Matthew Hiatt</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-        aria-controls="navbarNav" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About</a>
-          </li>
-        </ul>
+    <nav>
+      <div class="logo">
+        <h4>Matthew Hiatt</h4>
       </div>
-  </nav>
+      <ul class="navLinks">
+        <li>
+          <a target="_blank" href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a target="_blank" href="portfolio.html">Portfolio Work</a>
+        </li>
+        <li>
+          <a target="_blank" href="index.html">About Me</a>
+        </li>
+      </ul>
+      <div class="menuIcon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
     <section id="contact">
 
-      <h2>Contact</h2>
+      <h2 class="h2class">Contact</h2>
     </section>
       <hr />
-
+  <div id="container">
+    <div class="row"></div>
+      <div class="column">
       <form>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
@@ -51,16 +54,20 @@
           <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="form-group">
+          <label class="form-check-label" for="exampleCheck1">Message</label>
           <input type="textbox" class="form-group message" id="examplemessage">
-          <label class="form-check-label" for="exampleCheck1">message</label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="submitBtn">Submit</button>
       </form>
         <ul>
-          <li><strong>Email:</strong><a href="mhiatt62@gmail.com"> Matt Hiatt's Email Link</a>.<br></li>
-          <li><strong>Github:</strong> <a href="https://github.com/matthiatt"> Matt Hiatt's Github Link</a></li>
+        <div class="linkContainer">
+          <div class="row"></div>
+            <div class="column">
+          <li><a target="_blank" href="mailto:mhiatt62@gmail.com"><img id="emailURL" alt="gmail logo link" src="logos\Gmail-logo.jpg">E-Mail Link</li>
+          <li><a target="_blank" href="https://github.com/matthiatt"><img id="gitHubURL" alt="Github logo link" src="logos\GitHub-Mark.png">Github Link</li>
           <li><strong>Portfolio:</strong> <a href="portfolio.html">coming soon!</a></li>
         </ul>
-
+        </div>
+  </div>
 </body>
 </html>

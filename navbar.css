@@ -1,0 +1,95 @@
+/* -----------------------------Resources Used--------------------------------- */
+/* https: //css-tricks.com/snippets/css/transparent-background-images/ */
+/* https: //wordpress.org/support/topic/css-code-to-move-menu/ */
+/* https: //developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX */
+/* https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow */
+/* https://www.w3schools.com/cssref/sel_active.asp */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #0ea6d4;
+    font-family: 'Poppins',
+    sans-serif;
+}
+.logo{
+    color: rgba(255, 255, 255, 0.822);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    float: right;
+}
+/* removing bullet points */
+.navLinks li{
+    list-style: none;
+}
+.navLinks a{
+    color: rgba(255, 255, 255, 0.822);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.menuIcon{
+    /* display: none; */
+    cursor: pointer;
+}
+.menuIcon div{
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.822);
+    margin: 5px;
+    padding: 1px;
+    margin-top: 8px;
+}
+/* here I am making it possible for sizing to be possible for mobile devices along with desktops. */
+@media screen and (max-width:1024px){
+    .navLinks{
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow: hidden;
+    }
+    .navLinks{
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 8vh;
+        background-color: #0ea6d4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: 0.4s ease-in;
+    }
+    .navLinks li{
+        opacity: 0;
+    }
+    .menuIcon{
+        display: block;
+    }
+}
+.nav-active{
+    /* This is to take the previous tranform reanslateX in order to make the drop down menu to work */
+     transform: translateX(0%);
+}
+@keyframs navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+}

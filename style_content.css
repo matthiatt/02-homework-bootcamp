@@ -1,11 +1,64 @@
-#logo{
-    background-color: turquoise;
+* {
+    font-family: 'Josefin Sans',
+        sans-serif;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.h2class {
+    margin: auto;
+    padding: 1%;
+    font-size: xx-large;
+    text-align: left;
+    line-height: 0.4;
+}
+
+.linkContainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+#emailURL {
+    margin: auto;
+    padding: 1%;
+    width: 15%;
+    height: 15%;
+    align-items: inherit;
+}
+
+#gitHubURL {
+    margin: auto;
+    padding: 1%;
+    width: 15%;
+    height: 15%;
+    align-items: inherit;
+    text-align: left;
+}
+
+.column {
     float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
 }
-#contact{
-    color: turquoise;
-    background-color: white;
-}
-.form-group {
-    border-style: double;
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
