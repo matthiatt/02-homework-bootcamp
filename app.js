@@ -16,5 +16,5 @@ navLinks.forEach(link, index) => {
     link.style.animation = `navLinkFade 0.4s ease in ${index / 7}s`;
     console.log(index / 7);
     });
-
+}
 navBar();
