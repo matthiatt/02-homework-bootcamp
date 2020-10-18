@@ -29,3 +29,12 @@
 .lead{
     color: black;
 }
+
+div.btns {
+    padding: 2px;
+    
+}
+
+div.btns.dark {
+    background: #000;
+}
